@@ -18,3 +18,14 @@ from time import time
 timestamp = time()
 
 print(timestamp)
+
+#import custom module
+import validate
+from validate import validate_email
+
+email = 'test@test.com'
+
+if validate_email(email):
+    print('email is valid')
+else:
+    print('email is bad')
